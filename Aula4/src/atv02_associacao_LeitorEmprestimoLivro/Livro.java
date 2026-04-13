@@ -23,7 +23,7 @@ public class Livro {
     }
 
 
-    public void exibirInfomacoes(){
+    public String exibirInfomacoes(){
         System.out.println("Titulo: " + this.titulo);
         System.out.println("Autor: " + this.autor);
         System.out.println("ISBN: " + this.isbn);

@@ -1,27 +1,26 @@
-
 public class Papagaio extends Animal {
-    private String regiao;
+    private String tamanhoDoBico;
 
-    public Papagaio(String nome, String regiao) {
+    public Papagaio(String nome, String tamanhoDoBico) {
         super(nome);
-        this.regiao = regiao;
+        this.tamanhoDoBico = tamanhoDoBico;
     }
 
-    public String getRegiao() {
-        return regiao;
+    public String getTamanhoDoBico() {
+        return tamanhoDoBico;
     }
 
-    public void setRegiao(String regiao) {
-        this.regiao = regiao;
+    public void setTamanhoDoBico(String tamanhoDoBico) {
+        this.tamanhoDoBico = tamanhoDoBico;
     }
     @Override
-    public void emitirSom() {
-        System.out.println(super.getNome() +" Diz: Curupaco");
+    public void emitirSom(){
+        System.out.println(super.getNome() + "Tamanho do bico: " +getTamanhoDoBico() );
+        System.out.println("Emiti o som: " +"Curupaco");
     }
-
     @Override
     public void mover(){
-        System.out.println(super.getNome() + " esta voando");
+        System.out.println(getNome() + " Esta Voando");
     }
 
 }

@@ -1,4 +1,4 @@
-public abstract class Animal {
+public class Animal {
     protected String nome;
 
     public Animal(String nome) {
@@ -8,14 +8,17 @@ public abstract class Animal {
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public abstract void emitirSom();
-
-    public void mover(){
-        System.out.println("Movimento do animal " + getNome());
+    public void emitirSom(){
+        System.out.println(getNome() + "Emite som");
     }
 
+    public void mover(){
+        System.out.println(getNome() + " Moversse");
+    }
 }
+

@@ -29,6 +29,8 @@ public class Livro {
         System.out.println("ISBN: " + this.isbn);
         System.out.println("Emprestado: " + this.emprestado);
 
+        return exibirInfomacoes();
+
     }
 
 
